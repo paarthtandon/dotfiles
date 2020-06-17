@@ -44,6 +44,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " => VIM binds
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
+nnoremap <Leader>H :noh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -132,14 +133,6 @@ set laststatus=2
 " incorrect background rendering when using a color theme with a
 " background color.
 let &t_ut=''
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim-Plug

@@ -237,3 +237,6 @@ exec --no-startup-id "blueman-applet"
 
 #megasync
 exec --no-startup-id "megasync"
+
+#touchpad-toggle
+bindsym $mod+t exec touchpad-toggle
