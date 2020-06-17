@@ -160,6 +160,7 @@ Plug 'nightsense/strawberry'
 Plug 'sts10/vim-pink-moon'
 Plug 'lifepillar/vim-solarized8'
 Plug 'Chiel92/vim-autoformat'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
