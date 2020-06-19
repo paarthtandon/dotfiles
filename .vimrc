@@ -153,21 +153,14 @@ call plug#begin('~/.vim/plugged')
 
 " Github
 Plug 'https://github.com/frazrepo/vim-rainbow.git'
-Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
-Plug 'dylanaraps/wal.vim'
-Plug 'nightsense/strawberry'
-Plug 'sts10/vim-pink-moon'
 Plug 'lifepillar/vim-solarized8'
 Plug 'Chiel92/vim-autoformat'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
-Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -182,29 +175,16 @@ set background=dark
 let g:gruvbox_italic=1
 colorscheme gruvbox
 
-" => pywal
-" colorscheme wal
-
-" => strawberry
-" colorscheme strawberry-dark
-
-" => pink-moon
-" colorscheme pink-moon
-
 " => solarized
 " colorscheme solarized8_flat
 
 " => vim-autoformat
 let g:python3_host_prog='/bin/python3'
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => rainbow vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rainbow_active = 1 "enables vim rainbow
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " air-line
 let g:airline_powerline_fonts = 1
 
@@ -227,25 +207,16 @@ let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
 " airline symbols
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_symbols.branch = ''
-"let g:airline_symbols.readonly = ''
-"let g:airline_symbols.linenr = ''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 let g:airline_theme='gruvbox'
 let g:airline_solarized_bg='dark'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Nerdcommenter
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc.nvim
@@ -262,8 +233,3 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => fzf
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <Leader>F :Files<CR>
