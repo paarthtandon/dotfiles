@@ -196,9 +196,9 @@ set $darkgray #1d2021
 bar {
     font pango:Source Code Pro 10
     status_command ~/.config/i3/bumblebee-status/bumblebee-status \
-                -m cpu memory disk nic pasink battery datetime \
+                -m disk nic pasink battery datetime \
                  \
-                -t gruvbox-powerline
+                -t gruvbox
     colors {
         focused_workspace    $green $green $darkgray
         inactive_workspace   $darkgray $darkgray $yellow
