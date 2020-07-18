@@ -213,7 +213,7 @@ bar {
 exec --no-startup-id "python ~/.config/i3/i3-alternating-layout/alternating_layouts.py"
 
 # rofi
-bindsym $mod+d exec --no-startup-id "rofi -show drun -font \\"Source Code Pro 25\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
+bindsym $mod+d exec --no-startup-id "rofi -show drun -font \\"Source Code Pro 14\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
 
 #brightness binds
 bindsym XF86MonBrightnessUp exec blight set +10% 
