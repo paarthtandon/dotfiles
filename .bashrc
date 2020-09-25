@@ -144,3 +144,9 @@ if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]
 fi
 
 alias sleep='systemctl suspend'
+alias e='nvim'
+alias condaA='source /opt/anaconda/bin/activate root'
+alias condaD='conda deactivate'
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
