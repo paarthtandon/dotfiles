@@ -138,3 +138,9 @@ ex ()
 
 alias sleep='systemctl suspend'
 alias e='micro'
+alias ss='grim -g "$(slurp)" screenshot.png'
+alias c='code --enable-features=UseOzonePlatform --ozone-platform=wayland'
+
+GCM_CREDENTIAL_STORE=cache
+
+export QT_QPA_PLATFORM=xcb
